@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Athleon AET10 downloads</title>
+<meta name="description" content="Download the Athleon AET10 app for Android, Windows and macOS.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #eff6ff;
+    --surface: #ffffff;
+    --border: #d5e3f5;
+    --text: #0b1220;
+    --muted: #51607a;
+    --primary: #0284c7;
+    --primary-strong: #0369a1;
+    --on-primary: #ffffff;
+    --amber: #b45309;
+    --amber-bg: #fef3c7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #090b10;
+      --surface: #121620;
+      --border: #222a3a;
+      --text: #e8eef8;
+      --muted: #93a1b8;
+      --primary: #0ea5e9;
+      --primary-strong: #38bdf8;
+      --on-primary: #04121c;
+      --amber: #fbbf24;
+      --amber-bg: #2a2110;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { width: 56px; height: 56px; border-radius: 12px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+  .version { color: var(--muted); margin: 4px 0 0; font-size: 15px; }
+  .lead { color: var(--muted); margin: 20px 0 28px; max-width: 60ch; }
+  .grid { display: grid; gap: 12px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .card h2 { font-size: 18px; margin: 0 0 2px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .info { flex: 1 1 260px; min-width: 0; }
+  .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--on-primary);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  .btn:hover, .btn:focus-visible { background: var(--primary-strong); }
+  .btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+  .tag {
+    display: inline-block;
+    background: var(--amber-bg);
+    color: var(--amber);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  h3 { font-size: 16px; margin: 36px 0 8px; }
+  ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 15px; }
+  li { margin: 6px 0; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--primary); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>Athleon AET10</h1>
+      <p class="version">Version 2.0.0</p>
+    </div>
+  </header>
+
+  <p class="lead">Apps for the Athleon AET10 electronic target. Pick your device below.</p>
+
+  <div class="grid">
+    <section class="card">
+      <div class="info">
+        <h2>Android</h2>
+        <p>Phone and tablet app (.apk)</p>
+      </div>
+      <a class="btn" href="https://github.com/openorbittech/athleon-downloads/releases/latest/download/Athleon-android.apk">Download APK</a>
+    </section>
+
+    <section class="card">
+      <div class="info">
+        <h2>Windows</h2>
+        <p>Desktop app installer, 64-bit (.exe)</p>
+      </div>
+      <a class="btn" href="https://github.com/openorbittech/athleon-downloads/releases/latest/download/Athleon-windows-setup.exe">Download for Windows</a>
+    </section>
+
+    <section class="card">
+      <div class="info">
+        <h2>macOS</h2>
+        <p>Desktop app for Apple silicon and Intel (.dmg)</p>
+      </div>
+      <a class="btn" href="https://github.com/openorbittech/athleon-downloads/releases/latest/download/Athleon-macos.dmg">Download for Mac</a>
+    </section>
+
+    <section class="card">
+      <div class="info">
+        <h2>iPhone and iPad</h2>
+        <p>Distributed through TestFlight</p>
+      </div>
+      <span class="tag">Coming soon</span>
+    </section>
+  </div>
+
+  <h3>Installing</h3>
+  <ul>
+    <li><strong>Android:</strong> open the downloaded file and allow installs from your browser when asked.</li>
+    <li><strong>Windows:</strong> run the installer. If Windows shows "Windows protected your PC", choose More info, then Run anyway.</li>
+    <li><strong>macOS:</strong> open the .dmg and drag Athleon to Applications.</li>
+  </ul>
+
+  <footer>
+    All files and older versions are on the <a href="https://github.com/openorbittech/athleon-downloads/releases">releases page</a>.
+  </footer>
+</main>
+</body>
+</html>
